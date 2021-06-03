@@ -1,59 +1,82 @@
 /**
- * class Mahasiswa.
+ * class Mahasiswa 
  *
- * @author Fakhrul Razi
- * @version 0.1
+ * @author fakhrul razi
+ * @version  0.02
  */
 public class Mahasiswa
 {
-    // instance variables - replace the example below with your own
+      // instance variables - replace the example below with your own
     private int nim;
-    private String nama;
-    private String kelas;
-    private String alamat;
     private int umur;
+    private String nama; 
+    private String alamat;
+    private String kelas;
     
-    public Mahasiswa(int nim, String nama, String kelas,String alamat, int umur)
+    /**
+     * Constructor for objects of class Mahasiswa
+     */
+    public Mahasiswa(int nim, int umur, String nama, String alamat, String kelas)
     {
         this.nim = nim;
-        this.nama = nama;
-        this.kelas = kelas;
-        this.alamat = alamat;
         this.umur = umur;
-                
+        this.nama = nama;
+        this.alamat = alamat;
+        this.kelas = kelas;
     }
-   
-    public int getnimMhs()
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public String getnamaMhs()
     {
-         return this.nim;
-    }
-    
-   public String getnamaMhs()
-    {
-         return this.nama;
-    }
-    
-    public String getkelasMhs()
-    {
-         return this.kelas;
+        return this.nama;
     }
     
     public String getalamatMhs()
     {
-         return this.alamat;
+        return this.alamat;
     }
-     
+    
+    public String getkelasMhs()
+    {
+        return this.kelas;
+    }
+    
+    public int getnimMhs()
+    {
+        return this.nim;
+    }
+    
     public int getumurMhs()
     {
-         return this.umur;
+        return this.umur;
     }
     
-    public void setnamaMhs(String nama)
-    {
+    public void setnamaMhs(String nama){
         this.nama = nama;
     }
+      public void setalamatMhs(String alamat){
+        this.alamat = alamat;
+    }
     
-
-
+    public void setkelasMhs(String kelas){
+        this.kelas = kelas;
+    }
+    
+    public void setnimMhs(int nim){
+        this.nim = nim;
+    }
+    
+    public void setumurMhs(int umur){
+        this.umur = umur;
+    }
+   
+    
+  
+    
     
 }
