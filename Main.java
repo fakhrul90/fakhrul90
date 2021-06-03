@@ -29,30 +29,30 @@ public class Main
         
         for (int i=0; i < jumlah ; i++) 
         {
-            System.out.print("Nim Mahasiswa ke-"+(i+1)+": ");
+            System.out.print("nim mahasiswa ke-"+(i+1)+": ");
             nim = input.nextInt();
-            System.out.print("umur Mahasiswa ke-"+(i+1)+": ");
-            umur = input.nextInt();
-            System.out.print("Nama Mahasiswa ke-"+(i+1)+":  ");
+            System.out.print("nama mahasiswa ke-"+(i+1)+": ");
             nama = input.next();
-            System.out.print("Kelas ke-"+(i+1)+":  ");
+            System.out.print("kelas mahasiswa ke-"+(i+1)+":  ");
             kelas = input.next();
-            System.out.print("Alamat Mahasiswa ke-"+(i+1)+":  ");
+            System.out.print("alamat mahasiswa ke-"+(i+1)+":  ");
             alamat = input.next();
+            System.out.print("umur mahasiswa ke-"+(i+1)+":  ");
+            umur = input.nextInt();
 
 
-            arrm.add(new Mahasiswa(nim, umur, nama, kelas, alamat));
+            arrm.add(new Mahasiswa(nim, nama, kelas, alamat, umur));
         }
         
         
         System.out.println("Menampilkan Data Mahasiswa");
         for (Mahasiswa mhs: arrm)
         {
-             System.out.println("nim = "+ mhs.getnimMhs());
-             System.out.println("nama = "+ mhs.getumurMhs());
-              System.out.println("kelas = "+ mhs.getnamaMhs());
-             System.out.println("alamat = "+ mhs.getkelasMhs());
-              System.out.println("umur = "+ mhs.getalamatMhs());
+              System.out.println("nim = "+ mhs.getnimMhs());
+              System.out.println("nama = "+ mhs.getnamaMhs());
+              System.out.println("kelas = "+ mhs.getkelasMhs());
+              System.out.println("alamat = "+ mhs.getalamatMhs());
+              System.out.println("umur = "+ mhs.getumurMhs());
         }
         System.out.println("\nUpdate Data Mahasiswa");
         int cariNim;
@@ -71,11 +71,11 @@ public class Main
         System.out.println("\nData Mahasiswa Setelah di Update");
         for(Mahasiswa mhs:arrm)
         {
-            System.out.println("NIM = "+ mhs.getnimMhs());
-             System.out.println("UMUR = "+ mhs.getumurMhs());
-              System.out.println("NAMA = "+ mhs.getnamaMhs());
-             System.out.println("KELAS = "+ mhs.getkelasMhs());
-              System.out.println("ALAMAT = "+ mhs.getalamatMhs());
+            System.out.println("nim = "+ mhs.getnimMhs());
+             System.out.println("nama = "+ mhs.getnamaMhs());
+              System.out.println("kelas = "+ mhs.getkelasMhs());
+             System.out.println("alamat = "+ mhs.getalamatMhs());
+              System.out.println("umur = "+ mhs.getumurMhs());
             
         }
         
@@ -87,11 +87,11 @@ public class Main
         {
         if (mhs.getnimMhs() == cariNim)
         {
-        System.out.println("NIM = "+ mhs.getnimMhs());
-             System.out.println("UMUR = "+ mhs.getumurMhs());
-              System.out.println("NAMA = "+ mhs.getnamaMhs());
-             System.out.println("KELAS = "+ mhs.getkelasMhs());
-              System.out.println("ALAMAT = "+ mhs.getalamatMhs());
+        System.out.println("nim = "+ mhs.getnimMhs());
+             System.out.println("nama = "+ mhs.getnamaMhs());
+              System.out.println("kelas = "+ mhs.getalamatMhs());
+             System.out.println("alamat = "+ mhs.getalamatMhs());
+              System.out.println("umur = "+ mhs.getumurMhs());
         }
         }
         
@@ -118,11 +118,11 @@ public class Main
         System.out.println("\nData Mahasiswa Setelah di Hapus");
         for(Mahasiswa mhs:arrm)
         {
-            System.out.println("NIM = "+ mhs.getnimMhs());
-             System.out.println("UMUR = "+ mhs.getumurMhs());
-              System.out.println("NAMA = "+ mhs.getnamaMhs());
-             System.out.println("KELAS = "+ mhs.getkelasMhs());
-              System.out.println("ALAMAT = "+ mhs.getalamatMhs());
+             System.out.println("nim = "+ mhs.getnimMhs());
+             System.out.println("nama = "+ mhs.getnamaMhs());
+             System.out.println("kelas = "+ mhs.getkelasMhs());
+             System.out.println("alamat = "+ mhs.getalamatMhs());
+             System.out.println("umur = "+ mhs.getumurMhs());
         }
     } 
         

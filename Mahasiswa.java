@@ -10,10 +10,10 @@ public class Mahasiswa
     private int nim;
     private String nama;
     private String kelas;
-    private int umur;
     private String alamat;
+    private int umur;
     
-    public Mahasiswa(int nim, int umur, String nama,String kelas, String alamat)
+    public Mahasiswa(int nim, String nama, String kelas,String alamat, int umur)
     {
         this.nim = nim;
         this.nama = nama;
